@@ -1,0 +1,25 @@
+﻿<Page x:Class="WPF.HrGran"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="HrGran">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+            <TextBlock Text="Længde af arealet (m):" Margin="0,0,0,10"/>
+            <TextBox x:Name="lengthTextBox" Margin="0,0,0,20"/>
+
+            <TextBlock Text="Bredde af arealet (m):" Margin="0,0,0,10"/>
+            <TextBox x:Name="widthTextBox" Margin="0,0,0,20"/>
+
+            <TextBlock Text="Vælg type af træer:" Margin="0,0,0,10"/>
+            <ComboBox x:Name="treeTypeComboBox" Margin="0,0,0,20">
+                <ComboBoxItem Content="Ædelgran"/>
+                <ComboBoxItem Content="Nordmannsgran"/>
+                <ComboBoxItem Content="Rødgran"/>
+            </ComboBox>
+
+            <Button Content="Beregn" Click="Calculate_Click" Margin="0,0,0,20"/>
+
+            <TextBlock x:Name="resultTextBlock" FontSize="16" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Page>
